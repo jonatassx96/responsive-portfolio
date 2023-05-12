@@ -23,3 +23,33 @@ const linkAction = () => {
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*========== ADD BLUR TO HEADER ==========*/
+const blurHeader = () => {
+  const header = document.getElementById('header')
+  //When the scroll is greater than 50 viewport height, add the blur-header class to the header tag
+  this.scrollY >= 50 ? header.classList.add('blur-header')
+                     : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
+
+/*========== EMAIL JS ==========*/
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+  e.preventDefault()
+  // serviceID - templateID - #form - publicKey
+  emailjs.sendForm('service_or0kxqk', 'template_6acrxcv', '#contact-form', '8ix5GGCUSnOiK8AHd')
+    .then(() =>{
+      //Show sent mesage
+      contactMessage.textContent = 'Message sent sucessfully ✔️'
+      
+    }, () =>{
+      //Show error message
+      contactMessage.textContent = 'Message not sent (service error) ❌'
+
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)

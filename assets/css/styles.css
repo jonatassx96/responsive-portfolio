@@ -318,10 +318,10 @@ svg {
     filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
 }
 
-/* .home__img {
+.home__img {
     width: 900px;
-    transform: translateX(-40px);
-} */
+    transform: translateX(-120px);
+}
 
 /*=============== BUTTON ===============*/
 .button {
@@ -361,6 +361,11 @@ svg {
 
 .about__blob path {
     stroke: var(--first-color);
+}
+
+.about__img {
+    width: 900px;
+    transform: translateX(-120px);
 }
 
 
@@ -547,6 +552,7 @@ svg {
     justify-content: center;
     cursor: pointer;
 }
+
 
 .contact__message {
     position: absolute;

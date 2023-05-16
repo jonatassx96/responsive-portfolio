@@ -321,8 +321,8 @@ svg {
 }
 
 .home__img {
-    width: 900px;
-    transform: translateX(-120px);
+        width: 900px;
+        transform: translateX(-150px);
 }
 
 /*=============== BUTTON ===============*/
@@ -821,7 +821,7 @@ svg {
     }
 
     .services__container {
-        grid-template-columns: repeat(3, 352px);
+        grid-template-columns: repeat(2, 352px);
         padding-block: 2.5rem 4rem;
     }
 

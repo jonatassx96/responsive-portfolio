@@ -17,13 +17,13 @@
       -> Copy the color mode (HSL)
   */
 
-    --hue: 210;
-    --first-color: hsl(var(--hue), 100%, 70%);
-    --first-color-alt: hsl(var(--hue), 56%, 35%);
-    --title-color: hsl(228, 8%, 95%);
-    --text-color: hsl(228, 8%, 65%);
-    --body-color: hsl(228, 15%, 20%);
-    --container-color: hsl(228, 15%, 15%);
+  --hue: 210;
+  --first-color: hsl(var(--hue), 100%, 70%);
+  --first-color-alt: hsl(var(--hue), 56%, 35%);
+  --title-color: hsl(228, 8%, 95%);
+  --text-color: hsl(228, 8%, 65%);
+  --body-color: hsl(228, 15%, 20%);
+  --container-color: hsl(228, 15%, 15%);
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -404,7 +404,7 @@ svg {
 
 .skills__group {
     row-gap: 1rem;
-    list-style: decimal-leading-zero;
+    list-style: none;
 }
 
 .skills__item {
